@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Number of directories and subdirectories: $(find . -type d ! -name '.' ! -name '..' | wc -l)"
+find . -type d -not -name '.' | wc -l
